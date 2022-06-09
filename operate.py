@@ -11,6 +11,7 @@ def load_housing_data(filename, housing_path=HOUSING_PATH):
 
 if __name__ == "__main__":
     housing_data = load_housing_data(filename="housing.csv")
+    print(housing_data)
     housing_data.plot(
         kind="scatter",
         x="longitude",
