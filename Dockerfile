@@ -1,5 +1,4 @@
-FROM python
-COPY  requirements.txt requirements.txt
-COPY network.py network.py
+FROM python:3
+COPY . .
 RUN pip install -r requirements.txt
-CMD python3 network.py
+CMD python3 operate.py
